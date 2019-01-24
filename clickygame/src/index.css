@@ -12,3 +12,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.car-card {
+  height: 150px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: lightgrey;
+  font-weight: bolder;
+  text-shadow: 2px 2px white;
+}

@@ -1,28 +1,46 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import cards from "./cards.json";
+
+
 
 class App extends Component {
+
+  state = {
+    score: 0,
+    tally: 0,
+    cards: cards
+  };
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <header>
+              <p>Score: {this.state.score}</p>
+              <p>Tally: {this.state.tally}</p>
+            </header>
+          </div>
+        </div>
+        <div className="row">
+          {this.state.cards.map(card => (
+            <div
+              key={card.id}
+              className="car-card col-md-3"
+              style={{backgroundImage: `url(${card.image})`}}>
+              {card.name}
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
 }
+
+
+
+
+
 
 export default App;

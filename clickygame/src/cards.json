@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/images/tarot-kingofcups.gif",
+        "name": "King of Cups"
+    },
+    {
+        "id": 2,
+        "image": "/assets/images/tarot-kingofpentacles.gif",
+        "name": "King of Pentacles"
+    },
+    {
+        "id": 3,
+        "image": "/assets/images/tarot-kingofswords.gif",
+        "name": "King of Swords"
+    },
+    {
+        "id": 4,
+        "image": "/assets/images/tarot-kingofwands.gif",
+        "name": "King of Wands"
+    },
+    {
+        "id": 5,
+        "image": "/assets/images/tarot-knightofcups.gif",
+        "name": "Knight of Cups"
+    },
+    {
+        "id": 6,
+        "image": "/assets/images/tarot-knightofpentacles.gif",
+        "name": "Knight of Pentacles"
+    },
+    {
+        "id": 7,
+        "image": "/assets/images/tarot-knightofswords.gif",
+        "name": "Knight of Swords"
+    },
+    {
+        "id": 8,
+        "image": "/assets/images/tarot-knightofwands.gif",
+        "name": "Knight of Wands"
+    },
+    {
+        "id": 13,
+        "image": "/assets/images/tarot-queenofcups.gif",
+        "name": "Queen of Cups"
+    },
+    {
+        "id":14,
+        "image": "/assets/images/tarot-queenofpentacles.gif",
+        "name": "Queen of Pentacles"
+    },
+    {
+        "id": 15,
+        "image": "/assets/images/tarot-queenofswords.gif",
+        "name": "Queen of Swords"
+    },
+    {
+        "id": 16,
+        "image": "/assets/images/tarot-queenofwands.gif",
+        "name": "Queen of Wands"
+    }
+]
