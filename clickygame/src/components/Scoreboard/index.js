@@ -2,14 +2,17 @@ import React from "react";
 
 function Scoreboard(props) {
     return (
+      <header>
         <div className="row">
         <div className="col-md-12">
-          <header>
+          
+            {/* <p>Random Number: {props.randomId}</p> */}
             <p>Score: {props.score}</p>
             <p>Tally: {props.tally}</p>
-          </header>
+         
         </div>
       </div>
+      </header>
     )
 }
 
