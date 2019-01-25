@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // import './App.css';
 import cards from "./cards.json";
-
-
+import Scoreboard from "./components/Scoreboard";
+import Card from "./components/Card";
 
 class App extends Component {
 
@@ -12,35 +12,31 @@ class App extends Component {
     cards: cards
   };
 
+  handleClicked = id => {
+    this.setState({
+      tally: this.state.tally + 1
+    });
+    alert(`clicked card with id of ${id}`);
+  }
+
   render() {
     return (
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <header>
-              <p>Score: {this.state.score}</p>
-              <p>Tally: {this.state.tally}</p>
-            </header>
-          </div>
-        </div>
+        <Scoreboard score={this.state.score} tally={this.state.tally} />
         <div className="row">
           {this.state.cards.map(card => (
-            <div
+            <Card 
               key={card.id}
-              className="car-card col-md-3"
-              style={{backgroundImage: `url(${card.image})`}}>
-              {card.name}
-            </div>
+              id={card.id}
+              name={card.name}
+              image={card.image}
+              handleClicked={this.handleClicked}
+            />
           ))}
         </div>
       </div>
     );
   }
 }
-
-
-
-
-
 
 export default App;

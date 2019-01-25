@@ -15,8 +15,13 @@ code {
 
 .car-card {
   height: 150px;
+  /* width: 100px; */
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.car-card:hover {
+  cursor: pointer;
 }
 
 body {
