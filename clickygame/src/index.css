@@ -18,10 +18,12 @@ code {
   /* width: 100px; */
   margin-left: 10px;
   margin-bottom: 10px;
+ 
 }
 
 .car-card:hover {
   cursor: pointer;
+  box-shadow: 0px, 0px, 5px, black;
 }
 
 body {

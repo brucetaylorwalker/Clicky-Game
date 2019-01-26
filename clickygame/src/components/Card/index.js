@@ -8,10 +8,13 @@ function Card(props) {
             key={props.id}
             className="car-card col-md-3"
             onClick={() => props.handleClicked(props.id)}
-            
-            >
+           
+
+        >
             {props.name}
+      
         </div>
+        
     )
 }
 

@@ -11,7 +11,7 @@ class App extends Component {
     score: 0,
     tally: 0,
     cards: cards,
-    // clicked: false
+    clicked: false
   };
 
   componentDidMount() {
@@ -22,26 +22,14 @@ class App extends Component {
     this.setState({
       tally: this.state.tally + 1
     });
-
-    // if(this.state.randomId === id && this.state.clicked === true) {
-    //       this.setState({
-    //         score: this.state.score + 1
-    //       }else{
-    //       this.setState({
-    //         score: this.state.score = 0
-    // });
-    // this.setNewRandomId(this.state.cards);
-    // }
-
-
-    // this.setNewRandomId(this.state.cards);
-
-    // if (this.state.randomId === id) {
-    //   this.setState({
-    //     score: this.state.score + 1
-    //   });
-    //   this.setNewRandomId(this.state.cards);
-    // }
+  
+    if (this.state.randomId === id) {
+      this.setState({
+        score: this.state.score + 1
+      });
+      this.setNewRandomId(this.state.cards);
+    }
+   
   }
 
   setNewRandomId = (array) => {
@@ -54,7 +42,10 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <Scoreboard score={this.state.score} tally={this.state.tally} randomId={this.state.randomId} />
+        <Scoreboard
+          score={this.state.score}
+          tally={this.state.tally}
+          randomId={this.state.randomId} />
         <div className="row">
           {this.state.cards.map(card => (
             <Card
